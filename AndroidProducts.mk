@@ -1,4 +1,4 @@
-#
+
 # Copyright 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,4 +14,7 @@
 # limitations under the License.
 #
 
-add_lunch_combo dot_shamu-userdebug
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_shamu.mk \
+    $(LOCAL_DIR)/bt_shamu.mk
+
